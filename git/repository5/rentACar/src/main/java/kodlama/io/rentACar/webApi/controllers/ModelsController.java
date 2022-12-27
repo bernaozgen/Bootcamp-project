@@ -1,6 +1,7 @@
-package kodlamaio.com.rentACar.webApi;
+package kodlama.io.rentACar.webApi.controllers;
 
 import java.util.List;
+
 
 import javax.validation.Valid;
 
@@ -14,16 +15,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import kodlamaio.com.rentACar.business.abstracts.ModelService;
-import kodlamaio.com.rentACar.business.requests.create.CreateModelRequest;
-import kodlamaio.com.rentACar.business.requests.delete.DeleteModelRequest;
-import kodlamaio.com.rentACar.business.requests.update.UpdateModelRequest;
-import kodlamaio.com.rentACar.business.responses.create.CreateModelResponse;
-import kodlamaio.com.rentACar.business.responses.get.model.GetAllModelResponse;
-import kodlamaio.com.rentACar.business.responses.get.model.GetModelResponse;
-import kodlamaio.com.rentACar.business.responses.update.UpdateModelResponse;
-import kodlamaio.com.rentACar.core.utilities.results.DataResult;
-import kodlamaio.com.rentACar.core.utilities.results.Result;
+import kodlama.io.rentACar.business.abstracts.ModelService;
+import kodlama.io.rentACar.business.requests.create.CreateModelRequest;
+import kodlama.io.rentACar.business.requests.delete.DeleteModelRequest;
+import kodlama.io.rentACar.business.requests.update.UpdateModelRequest;
+import kodlama.io.rentACar.business.responses.create.CreateModelResponse;
+import kodlama.io.rentACar.business.responses.get.model.GetAllModelResponse;
+import kodlama.io.rentACar.business.responses.get.model.GetModelResponse;
+import kodlama.io.rentACar.business.responses.update.UpdateModelResponse;
+import kodlama.io.rentACar.core.utilities.results.DataResult;
+import kodlama.io.rentACar.core.utilities.results.Result;
 import lombok.AllArgsConstructor;
 
 @RestController

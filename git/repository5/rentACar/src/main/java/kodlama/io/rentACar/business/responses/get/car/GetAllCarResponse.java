@@ -1,4 +1,4 @@
-package kodlamaio.com.rentACar.business.responses.get.car;
+package kodlama.io.rentACar.business.responses.get.car;
 
 import java.time.LocalDate;
 

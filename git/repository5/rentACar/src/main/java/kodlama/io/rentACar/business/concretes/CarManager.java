@@ -1,27 +1,27 @@
-package kodlamaio.com.rentACar.business.concretes;
+package kodlama.io.rentACar.business.concretes;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import kodlamaio.com.rentACar.business.abstracts.CarService;
-import kodlamaio.com.rentACar.business.constants.Messages;
-import kodlamaio.com.rentACar.business.requests.create.CreateCarRequest;
-import kodlamaio.com.rentACar.business.requests.delete.DeleteCarRequest;
-import kodlamaio.com.rentACar.business.requests.update.UpdateCarRequest;
-import kodlamaio.com.rentACar.business.responses.create.CreateCarResponse;
-import kodlamaio.com.rentACar.business.responses.get.car.GetAllCarResponse;
-import kodlamaio.com.rentACar.business.responses.get.car.GetCarResponse;
-import kodlamaio.com.rentACar.business.responses.update.UpdateCarResponse;
-import kodlamaio.com.rentACar.core.utilities.exceptions.BusinessException;
-import kodlamaio.com.rentACar.core.utilities.mapping.ModelMapperService;
-import kodlamaio.com.rentACar.core.utilities.results.DataResult;
-import kodlamaio.com.rentACar.core.utilities.results.Result;
-import kodlamaio.com.rentACar.core.utilities.results.SuccessDataResult;
-import kodlamaio.com.rentACar.core.utilities.results.SuccessResult;
-import kodlamaio.com.rentACar.dataAccess.CarRepository;
-import kodlamaio.com.rentACar.entities.Car;
+import kodlama.io.rentACar.business.abstracts.CarService;
+import kodlama.io.rentACar.business.constants.Messages;
+import kodlama.io.rentACar.business.requests.create.CreateCarRequest;
+import kodlama.io.rentACar.business.requests.delete.DeleteCarRequest;
+import kodlama.io.rentACar.business.requests.update.UpdateCarRequest;
+import kodlama.io.rentACar.business.responses.create.CreateCarResponse;
+import kodlama.io.rentACar.business.responses.get.car.GetAllCarResponse;
+import kodlama.io.rentACar.business.responses.get.car.GetCarResponse;
+import kodlama.io.rentACar.business.responses.update.UpdateCarResponse;
+import kodlama.io.rentACar.core.utilities.exceptions.BusinessException;
+import kodlama.io.rentACar.core.utilities.mapping.ModelMapperService;
+import kodlama.io.rentACar.core.utilities.results.DataResult;
+import kodlama.io.rentACar.core.utilities.results.Result;
+import kodlama.io.rentACar.core.utilities.results.SuccessDataResult;
+import kodlama.io.rentACar.core.utilities.results.SuccessResult;
+import kodlama.io.rentACar.dataAccess.abstracts.CarRepository;
+import kodlama.io.rentACar.entities.Car;
 import lombok.AllArgsConstructor;
 
 @Service

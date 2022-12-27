@@ -1,4 +1,4 @@
-package kodlamaio.com.rentACar.business.requests.update;
+package kodlama.io.rentACar.business.requests.update;
 
 import java.time.LocalDate;
 

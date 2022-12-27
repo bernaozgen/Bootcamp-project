@@ -1,4 +1,4 @@
-package kodlamaio.com.rentACar.entities;
+package kodlama.io.rentACar.entities;
 
 import java.time.LocalDate;
 

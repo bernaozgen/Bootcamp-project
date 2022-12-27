@@ -1,4 +1,4 @@
-package kodlamaio.com.rentACar.business.requests.update;
+package kodlama.io.rentACar.business.requests.update;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;

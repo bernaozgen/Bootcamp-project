@@ -1,4 +1,4 @@
-package kodlamaio.com.rentACar.business.requests.delete;
+package kodlama.io.rentACar.business.requests.delete;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,27 +1,27 @@
-package kodlamaio.com.rentACar.business.concretes;
+package kodlama.io.rentACar.business.concretes;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import kodlamaio.com.rentACar.business.abstracts.BrandService;
-import kodlamaio.com.rentACar.business.constants.Messages;
-import kodlamaio.com.rentACar.business.requests.create.CreateBrandRequest;
-import kodlamaio.com.rentACar.business.requests.delete.DeleteBrandReguest;
-import kodlamaio.com.rentACar.business.requests.update.UpdateBrandRequest;
-import kodlamaio.com.rentACar.business.responses.create.CreateBrandResponse;
-import kodlamaio.com.rentACar.business.responses.get.brand.GetAllBrandResponse;
-import kodlamaio.com.rentACar.business.responses.get.brand.GetBrandResponse;
-import kodlamaio.com.rentACar.business.responses.update.UpdateBrandResponse;
-import kodlamaio.com.rentACar.core.utilities.exceptions.BusinessException;
-import kodlamaio.com.rentACar.core.utilities.mapping.ModelMapperService;
-import kodlamaio.com.rentACar.core.utilities.results.DataResult;
-import kodlamaio.com.rentACar.core.utilities.results.Result;
-import kodlamaio.com.rentACar.core.utilities.results.SuccessDataResult;
-import kodlamaio.com.rentACar.core.utilities.results.SuccessResult;
-import kodlamaio.com.rentACar.dataAccess.BrandRepository;
-import kodlamaio.com.rentACar.entities.Brand;
+import kodlama.io.rentACar.business.abstracts.BrandService;
+import kodlama.io.rentACar.business.constants.Messages;
+import kodlama.io.rentACar.business.requests.create.CreateBrandRequest;
+import kodlama.io.rentACar.business.requests.delete.DeleteBrandReguest;
+import kodlama.io.rentACar.business.requests.update.UpdateBrandRequest;
+import kodlama.io.rentACar.business.responses.create.CreateBrandResponse;
+import kodlama.io.rentACar.business.responses.get.brand.GetAllBrandResponse;
+import kodlama.io.rentACar.business.responses.get.brand.GetBrandResponse;
+import kodlama.io.rentACar.business.responses.update.UpdateBrandResponse;
+import kodlama.io.rentACar.core.utilities.exceptions.BusinessException;
+import kodlama.io.rentACar.core.utilities.mapping.ModelMapperService;
+import kodlama.io.rentACar.core.utilities.results.DataResult;
+import kodlama.io.rentACar.core.utilities.results.Result;
+import kodlama.io.rentACar.core.utilities.results.SuccessDataResult;
+import kodlama.io.rentACar.core.utilities.results.SuccessResult;
+import kodlama.io.rentACar.dataAccess.abstracts.BrandRepository;
+import kodlama.io.rentACar.entities.Brand;
 import lombok.AllArgsConstructor;
 
 @Service

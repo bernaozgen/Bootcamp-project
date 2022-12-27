@@ -1,28 +1,30 @@
-package kodlamaio.com.rentACar.business.concretes;
+package kodlama.io.rentACar.business.concretes;
+
+
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import kodlamaio.com.rentACar.business.abstracts.BrandService;
-import kodlamaio.com.rentACar.business.abstracts.ModelService;
-import kodlamaio.com.rentACar.business.constants.Messages;
-import kodlamaio.com.rentACar.business.requests.create.CreateModelRequest;
-import kodlamaio.com.rentACar.business.requests.delete.DeleteModelRequest;
-import kodlamaio.com.rentACar.business.requests.update.UpdateModelRequest;
-import kodlamaio.com.rentACar.business.responses.create.CreateModelResponse;
-import kodlamaio.com.rentACar.business.responses.get.model.GetAllModelResponse;
-import kodlamaio.com.rentACar.business.responses.get.model.GetModelResponse;
-import kodlamaio.com.rentACar.business.responses.update.UpdateModelResponse;
-import kodlamaio.com.rentACar.core.utilities.exceptions.BusinessException;
-import kodlamaio.com.rentACar.core.utilities.mapping.ModelMapperService;
-import kodlamaio.com.rentACar.core.utilities.results.DataResult;
-import kodlamaio.com.rentACar.core.utilities.results.Result;
-import kodlamaio.com.rentACar.core.utilities.results.SuccessDataResult;
-import kodlamaio.com.rentACar.core.utilities.results.SuccessResult;
-import kodlamaio.com.rentACar.dataAccess.ModelRepository;
-import kodlamaio.com.rentACar.entities.Model;
+import kodlama.io.rentACar.business.abstracts.BrandService;
+import kodlama.io.rentACar.business.abstracts.ModelService;
+import kodlama.io.rentACar.business.constants.Messages;
+import kodlama.io.rentACar.business.requests.create.CreateModelRequest;
+import kodlama.io.rentACar.business.requests.delete.DeleteModelRequest;
+import kodlama.io.rentACar.business.requests.update.UpdateModelRequest;
+import kodlama.io.rentACar.business.responses.create.CreateModelResponse;
+import kodlama.io.rentACar.business.responses.get.model.GetAllModelResponse;
+import kodlama.io.rentACar.business.responses.get.model.GetModelResponse;
+import kodlama.io.rentACar.business.responses.update.UpdateModelResponse;
+import kodlama.io.rentACar.core.utilities.exceptions.BusinessException;
+import kodlama.io.rentACar.core.utilities.mapping.ModelMapperService;
+import kodlama.io.rentACar.core.utilities.results.DataResult;
+import kodlama.io.rentACar.core.utilities.results.Result;
+import kodlama.io.rentACar.core.utilities.results.SuccessDataResult;
+import kodlama.io.rentACar.core.utilities.results.SuccessResult;
+import kodlama.io.rentACar.dataAccess.abstracts.ModelRepository;
+import kodlama.io.rentACar.entities.Model;
 import lombok.AllArgsConstructor;
 
 @Service
@@ -93,16 +95,7 @@ public class ModelManager implements ModelService {
 		}
 	}
 
-//	private void checkIfModelName(int brandId, String modelName) { // ilgili markada ilgili modelname var mı?
-//		Model model = this.modelRepository.getByModelName(modelName);
-//		if (brandService.getById(brandId).getData().getModels().forEach(
-//				modell->modelName=model.getModelName())==modelName) {
-//			
-//		}
-//		if (model.getBrand().getId() == brandId) {
-//			throw new BusinessException(Messages.ModelNameExist);
-//
-//		}
+
 	}
 
 

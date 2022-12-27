@@ -1,4 +1,4 @@
-package kodlamaio.com.rentACar.webApi;
+package kodlama.io.rentACar.webApi.controllers;
 
 import java.util.List;
 
@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import kodlamaio.com.rentACar.business.abstracts.CarService;
-import kodlamaio.com.rentACar.business.requests.create.CreateCarRequest;
-import kodlamaio.com.rentACar.business.requests.delete.DeleteCarRequest;
-import kodlamaio.com.rentACar.business.requests.update.UpdateCarRequest;
-import kodlamaio.com.rentACar.business.responses.create.CreateCarResponse;
-import kodlamaio.com.rentACar.business.responses.get.car.GetAllCarResponse;
-import kodlamaio.com.rentACar.business.responses.get.car.GetCarResponse;
-import kodlamaio.com.rentACar.business.responses.update.UpdateCarResponse;
-import kodlamaio.com.rentACar.core.utilities.results.DataResult;
-import kodlamaio.com.rentACar.core.utilities.results.Result;
+import kodlama.io.rentACar.business.abstracts.CarService;
+import kodlama.io.rentACar.business.requests.create.CreateCarRequest;
+import kodlama.io.rentACar.business.requests.delete.DeleteCarRequest;
+import kodlama.io.rentACar.business.requests.update.UpdateCarRequest;
+import kodlama.io.rentACar.business.responses.create.CreateCarResponse;
+import kodlama.io.rentACar.business.responses.get.car.GetAllCarResponse;
+import kodlama.io.rentACar.business.responses.get.car.GetCarResponse;
+import kodlama.io.rentACar.business.responses.update.UpdateCarResponse;
+import kodlama.io.rentACar.core.utilities.results.DataResult;
+import kodlama.io.rentACar.core.utilities.results.Result;
 import lombok.AllArgsConstructor;
 
 @RequestMapping("/api/cars")

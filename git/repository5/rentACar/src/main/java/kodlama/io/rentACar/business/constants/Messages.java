@@ -1,4 +1,4 @@
-package kodlamaio.com.rentACar.business.constants;
+package kodlama.io.rentACar.business.constants;
 
 public class Messages {
 	// Brand

@@ -1,4 +1,4 @@
-package kodlamaio.com.rentACar.core.utilities.results;
+package kodlama.io.rentACar.core.utilities.results;
 
 public class SuccessDataResult<T> extends DataResult<T> {
 

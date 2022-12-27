@@ -1,4 +1,4 @@
-package kodlamaio.com.rentACar;
+package kodlama.io.rentACar;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import kodlamaio.com.rentACar.core.utilities.exceptions.BusinessException;
-import kodlamaio.com.rentACar.core.utilities.results.ErrorDataResult;
+import kodlama.io.rentACar.core.utilities.exceptions.BusinessException;
+import kodlama.io.rentACar.core.utilities.results.ErrorDataResult;
 
 @SpringBootApplication
 @RestControllerAdvice
@@ -61,3 +61,5 @@ public class RentACarApplication {
 		return errorDataResult;
 	}
 }
+
+

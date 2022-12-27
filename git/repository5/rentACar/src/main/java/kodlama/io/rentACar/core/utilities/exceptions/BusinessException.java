@@ -1,4 +1,4 @@
-package kodlamaio.com.rentACar.core.utilities.exceptions;
+package kodlama.io.rentACar.core.utilities.exceptions;
 
 
 public class BusinessException extends RuntimeException {
