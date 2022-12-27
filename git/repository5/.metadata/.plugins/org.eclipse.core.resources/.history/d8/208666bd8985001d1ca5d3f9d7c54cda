@@ -1,0 +1,27 @@
+package kodlama.io.rentACar.business.abstracts;
+
+import java.util.List;
+
+import javax.naming.spi.DirStateFactory.Result;
+
+import kodlama.io.rentACar.business.requests.brands.CreateBrandRequest;
+import kodlama.io.rentACar.business.requests.brands.UpdateBrandRequest;
+import kodlama.io.rentACar.business.responses.brands.CreateBrandResponse;
+import kodlama.io.rentACar.business.responses.brands.UpdateBrandResponse;
+import kodlama.io.rentACar.core.utilities.results.DataResult;
+import kodlamaio.com.rentACar.business.requests.delete.DeleteBrandReguest;
+import kodlamaio.com.rentACar.business.responses.get.brand.GetAllBrandResponse;
+import kodlamaio.com.rentACar.business.responses.get.brand.GetBrandResponse;
+
+public interface BrandService {
+
+	DataResult<CreateBrandResponse> add(CreateBrandRequest brandRequest);
+
+	Result delete(DeleteBrandReguest deleteBrandReguest);
+
+	DataResult<UpdateBrandResponse> update(UpdateBrandRequest updateBrandRequest);
+
+	DataResult<GetBrandResponse> getById(int id);
+
+	DataResult<List<GetAllBrandResponse>> getAll();
+}

@@ -1,0 +1,46 @@
+package kodlama.io.rentACar.business.concretes;
+
+import org.springframework.stereotype.Service;
+
+import kodlama.io.rentACar.business.abstracts.CarService;
+import kodlama.io.rentACar.business.requests.cars.CreateCarRequest;
+import kodlama.io.rentACar.business.requests.cars.UpdateCarRequest;
+import kodlama.io.rentACar.business.responses.cars.CreateCarResponse;
+import kodlama.io.rentACar.business.responses.cars.UpdateCarResponse;
+import kodlama.io.rentACar.core.utilities.mapping.ModelMapperService;
+import kodlama.io.rentACar.dataAccess.abstracts.CarRepository;
+import kodlama.io.rentACar.entities.concretes.Car;
+import lombok.AllArgsConstructor;
+@Service
+@AllArgsConstructor
+public class CarManager implements CarService {
+	private CarRepository carRepository;
+	private ModelMapperService modelMapperService;
+	
+	
+	@Override
+	public CreateCarResponse add(CreateCarRequest createCarRequest) {
+		Car car=this.modelMapperService.forRequest().map(createCarRequest, Car.class);
+		carRepository.save(car);
+		CreateCarResponse response=this.modelMapperService.forResponse().
+				map(car, CreateCarResponse.class);
+		
+		
+		return response;
+	}
+
+
+	@Override
+	public UpdateCarResponse update(UpdateCarRequest updateCarRequest) {
+		Car car=this.modelMapperService.forRequest().map(updateCarRequest, Car.class);
+		carRepository.save(car);
+		UpdateCarResponse updateCarResponse =this.modelMapperService.forResponse().
+				map(car, UpdateCarResponse.class); 
+		return updateCarResponse;
+	}
+  
+	
+	
+
+
+}

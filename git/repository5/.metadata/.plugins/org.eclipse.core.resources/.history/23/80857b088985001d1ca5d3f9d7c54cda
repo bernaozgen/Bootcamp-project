@@ -1,0 +1,46 @@
+package kodlama.io.rentACar.business.concretes;
+
+import org.springframework.stereotype.Service;
+
+import kodlama.io.rentACar.business.abstracts.BrandService;
+import kodlama.io.rentACar.business.requests.brands.CreateBrandRequest;
+import kodlama.io.rentACar.business.requests.brands.UpdateBrandRequest;
+import kodlama.io.rentACar.business.responses.brands.CreateBrandResponse;
+import kodlama.io.rentACar.business.responses.brands.UpdateBrandResponse;
+import kodlama.io.rentACar.core.utilities.mapping.ModelMapperService;
+import kodlama.io.rentACar.dataAccess.abstracts.BrandRepository;
+import kodlama.io.rentACar.entities.concretes.Brand;
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class BrandManager implements BrandService {
+
+	private BrandRepository brandRepository;
+	private ModelMapperService modelMapperService;
+
+	@Override
+
+	public CreateBrandResponse add(CreateBrandRequest brandRequest) {
+		Brand brand = this.modelMapperService.forRequest().
+				map(brandRequest, Brand.class);
+		brandRepository.save(brand);
+		CreateBrandResponse createBrandResponse = this.modelMapperService.
+				forResponse().map(brand,
+				CreateBrandResponse.class);
+		return createBrandResponse;
+	}
+
+	@Override
+	public UpdateBrandResponse update(UpdateBrandRequest updateBrandRequest) {
+		Brand brand = this.modelMapperService.forRequest().
+				map(updateBrandRequest, Brand.class);
+		brandRepository.save(brand);
+
+		UpdateBrandResponse response = this.modelMapperService.forResponse().
+				map(brand, UpdateBrandResponse.class);
+
+		return response;
+	}
+
+}

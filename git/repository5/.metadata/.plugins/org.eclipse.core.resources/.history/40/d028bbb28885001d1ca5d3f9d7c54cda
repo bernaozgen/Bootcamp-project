@@ -1,0 +1,11 @@
+package kodlama.io.rentACar.business.abstracts;
+
+import kodlama.io.rentACar.business.requests.brands.CreateBrandRequest;
+import kodlama.io.rentACar.business.requests.brands.UpdateBrandRequest;
+import kodlama.io.rentACar.business.responses.brands.CreateBrandResponse;
+import kodlama.io.rentACar.business.responses.brands.UpdateBrandResponse;
+
+public interface BrandService {
+   CreateBrandResponse add (CreateBrandRequest brandRequest);
+   UpdateBrandResponse update(UpdateBrandRequest updateBrandRequest);
+}
